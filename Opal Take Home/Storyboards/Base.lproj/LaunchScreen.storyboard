@@ -16,10 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchLogo" translatesAutoresizingMaskIntoConstraints="NO" id="h7r-a7-xGC">
-                                <rect key="frame" x="96" y="35" width="201" height="686"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TextLogo" translatesAutoresizingMaskIntoConstraints="NO" id="h7r-a7-xGC">
+                                <rect key="frame" x="110.66666666666669" y="337" width="172" height="82"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="h7r-a7-xGC" secondAttribute="height" multiplier="233:795" id="EO3-mM-kSJ"/>
+                                    <constraint firstAttribute="width" constant="172" id="Hhd-9s-P9E"/>
+                                    <constraint firstAttribute="height" constant="82" id="NK5-nd-YJc"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -27,8 +28,7 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="h7r-a7-xGC" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-48" id="DNv-x1-XhK"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h7r-a7-xGC" secondAttribute="trailing" constant="96" id="Fef-J7-bg7"/>
-                            <constraint firstItem="h7r-a7-xGC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="96" id="vdl-HH-0kb"/>
+                            <constraint firstItem="h7r-a7-xGC" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ana-gK-qwM"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -38,6 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LaunchLogo" width="1684.5400390625" height="795.55999755859375"/>
+        <image name="TextLogo" width="86" height="41"/>
     </resources>
 </document>

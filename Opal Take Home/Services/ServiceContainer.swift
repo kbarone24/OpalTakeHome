@@ -22,7 +22,7 @@ final class ServiceContainer {
 
     // MARK: Service dependencies
     private(set) var rewardsService: RewardsServiceProtocol?
-
+    private(set) var userService: UserServiceProtocol?
 
     // MARK: Interface
     func register<T>(service: T, for keyPath: KeyPath<ServiceContainer, T?>) throws {

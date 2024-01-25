@@ -8,10 +8,6 @@
 import Foundation
 import UIKit
 
-enum Color: String {
-    case accent = "AccentColor"
-}
-
 extension UIColor {
     convenience init?(color: Color) {
         self.init(named: color.rawValue)

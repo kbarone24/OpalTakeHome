@@ -10,10 +10,9 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        registerServices()
         return true
     }
 
@@ -36,6 +35,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         do {
             let rewardsService = RewardsService()
             try ServiceContainer.shared.register(service: rewardsService, for: \.rewardsService)
+
+            let userService = UserService()
+            try ServiceContainer.shared.register(service: userService, for: \.userService)
         } catch {
             fatalError("Unable to initialize services: \(error.localizedDescription)")
         }

@@ -13,13 +13,32 @@
 		8C8D1D272B605039004C8ED5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C8D1D262B605039004C8ED5 /* Assets.xcassets */; };
 		8C8D1D2A2B605039004C8ED5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C8D1D282B605039004C8ED5 /* LaunchScreen.storyboard */; };
 		8C8D1D322B605CF3004C8ED5 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D1D312B605CF3004C8ED5 /* UIColorExtension.swift */; };
-		8C8D1D342B605D53004C8ED5 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D1D332B605D53004C8ED5 /* UIFontExtension.swift */; };
 		8C8D1D372B605F42004C8ED5 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D1D362B605F42004C8ED5 /* UIImageExtension.swift */; };
 		8C8D1D3B2B6063AA004C8ED5 /* RewardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D1D3A2B6063AA004C8ED5 /* RewardsViewModel.swift */; };
 		8C8D1D3E2B6063CB004C8ED5 /* RewardsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D1D3D2B6063CB004C8ED5 /* RewardsService.swift */; };
 		8C8D1D402B6063EA004C8ED5 /* ServiceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D1D3F2B6063EA004C8ED5 /* ServiceContainer.swift */; };
 		8C8D1D432B60665E004C8ED5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8C8D1D422B60665E004C8ED5 /* SnapKit */; };
 		8C8D1D482B6068E5004C8ED5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C8D1D472B6068E5004C8ED5 /* Main.storyboard */; };
+		8C8D1D572B618372004C8ED5 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D1D562B618372004C8ED5 /* UserService.swift */; };
+		8C8D1D592B6184AA004C8ED5 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D1D582B6184AA004C8ED5 /* UserProfile.swift */; };
+		8C8D1D5B2B6184E9004C8ED5 /* Reward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D1D5A2B6184E9004C8ED5 /* Reward.swift */; };
+		8C8D1D5D2B6188CD004C8ED5 /* GemTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D1D5C2B6188CD004C8ED5 /* GemTheme.swift */; };
+		8C8D1D612B6190ED004C8ED5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D1D602B6190ED004C8ED5 /* HomeViewController.swift */; };
+		8C8D1D652B6195F9004C8ED5 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8C8D1D642B61959D004C8ED5 /* SF-Pro-Display-Regular.otf */; };
+		8C8D1D662B61960D004C8ED5 /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8C8D1D632B619592004C8ED5 /* SF-Pro-Display-Semibold.otf */; };
+		8C8D1D6C2B61A47A004C8ED5 /* ReferralEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D1D6B2B61A47A004C8ED5 /* ReferralEntryView.swift */; };
+		8C8D1D6F2B61B1CC004C8ED5 /* HapticGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D1D6E2B61B1CC004C8ED5 /* HapticGenerator.swift */; };
+		8C8D1D712B61B54E004C8ED5 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D1D702B61B54E004C8ED5 /* Fonts.swift */; };
+		8C8D1D732B61B574004C8ED5 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D1D722B61B574004C8ED5 /* Colors.swift */; };
+		8C8D1D752B61C1CD004C8ED5 /* GuestPassHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D1D742B61C1CD004C8ED5 /* GuestPassHeader.swift */; };
+		8C8D1D772B61C7B7004C8ED5 /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8C8D1D762B61C7B7004C8ED5 /* SF-Pro-Display-Medium.otf */; };
+		8C8D1D792B61D5A2004C8ED5 /* TopRewardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D1D782B61D5A2004C8ED5 /* TopRewardCell.swift */; };
+		8C8D1D7B2B61DDD7004C8ED5 /* GradientProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D1D7A2B61DDD7004C8ED5 /* GradientProgressView.swift */; };
+		8C8D1D7D2B61E0D2004C8ED5 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D1D7C2B61E0D2004C8ED5 /* UIButtonExtension.swift */; };
+		8C8D1D7F2B61F0C5004C8ED5 /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D1D7E2B61F0C5004C8ED5 /* UITableViewCellExtension.swift */; };
+		8C8D1D812B6215A2004C8ED5 /* MainRewardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D1D802B6215A2004C8ED5 /* MainRewardCell.swift */; };
+		8C8D1D832B6219A6004C8ED5 /* GradientLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D1D822B6219A6004C8ED5 /* GradientLabel.swift */; };
+		8C8D1D852B621CC9004C8ED5 /* ClaimButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D1D842B621CC9004C8ED5 /* ClaimButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,12 +50,31 @@
 		8C8D1D292B605039004C8ED5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C8D1D2B2B605039004C8ED5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C8D1D312B605CF3004C8ED5 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
-		8C8D1D332B605D53004C8ED5 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		8C8D1D362B605F42004C8ED5 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		8C8D1D3A2B6063AA004C8ED5 /* RewardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsViewModel.swift; sourceTree = "<group>"; };
 		8C8D1D3D2B6063CB004C8ED5 /* RewardsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsService.swift; sourceTree = "<group>"; };
 		8C8D1D3F2B6063EA004C8ED5 /* ServiceContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceContainer.swift; sourceTree = "<group>"; };
 		8C8D1D472B6068E5004C8ED5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8C8D1D562B618372004C8ED5 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		8C8D1D582B6184AA004C8ED5 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		8C8D1D5A2B6184E9004C8ED5 /* Reward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reward.swift; sourceTree = "<group>"; };
+		8C8D1D5C2B6188CD004C8ED5 /* GemTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GemTheme.swift; sourceTree = "<group>"; };
+		8C8D1D602B6190ED004C8ED5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8C8D1D632B619592004C8ED5 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
+		8C8D1D642B61959D004C8ED5 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		8C8D1D6B2B61A47A004C8ED5 /* ReferralEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferralEntryView.swift; sourceTree = "<group>"; };
+		8C8D1D6E2B61B1CC004C8ED5 /* HapticGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticGenerator.swift; sourceTree = "<group>"; };
+		8C8D1D702B61B54E004C8ED5 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		8C8D1D722B61B574004C8ED5 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		8C8D1D742B61C1CD004C8ED5 /* GuestPassHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestPassHeader.swift; sourceTree = "<group>"; };
+		8C8D1D762B61C7B7004C8ED5 /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
+		8C8D1D782B61D5A2004C8ED5 /* TopRewardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRewardCell.swift; sourceTree = "<group>"; };
+		8C8D1D7A2B61DDD7004C8ED5 /* GradientProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientProgressView.swift; sourceTree = "<group>"; };
+		8C8D1D7C2B61E0D2004C8ED5 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		8C8D1D7E2B61F0C5004C8ED5 /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
+		8C8D1D802B6215A2004C8ED5 /* MainRewardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRewardCell.swift; sourceTree = "<group>"; };
+		8C8D1D822B6219A6004C8ED5 /* GradientLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientLabel.swift; sourceTree = "<group>"; };
+		8C8D1D842B621CC9004C8ED5 /* ClaimButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,10 +108,14 @@
 		8C8D1D1C2B605035004C8ED5 /* Opal Take Home */ = {
 			isa = PBXGroup;
 			children = (
+				8C8D1D622B619584004C8ED5 /* Fonts */,
 				8C8D1D1D2B605035004C8ED5 /* AppDelegate.swift */,
 				8C8D1D1F2B605035004C8ED5 /* SceneDelegate.swift */,
 				8C8D1D262B605039004C8ED5 /* Assets.xcassets */,
 				8C8D1D2B2B605039004C8ED5 /* Info.plist */,
+				8C8D1D6D2B61B1C0004C8ED5 /* Resources */,
+				8C8D1D552B6180A4004C8ED5 /* Models */,
+				8C8D1D5F2B6190B2004C8ED5 /* Home */,
 				8C8D1D392B606150004C8ED5 /* Rewards */,
 				8C8D1D382B606134004C8ED5 /* Storyboards */,
 				8C8D1D3C2B6063BB004C8ED5 /* Services */,
@@ -86,8 +128,9 @@
 			isa = PBXGroup;
 			children = (
 				8C8D1D312B605CF3004C8ED5 /* UIColorExtension.swift */,
-				8C8D1D332B605D53004C8ED5 /* UIFontExtension.swift */,
 				8C8D1D362B605F42004C8ED5 /* UIImageExtension.swift */,
+				8C8D1D7C2B61E0D2004C8ED5 /* UIButtonExtension.swift */,
+				8C8D1D7E2B61F0C5004C8ED5 /* UITableViewCellExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -106,6 +149,12 @@
 			children = (
 				8C8D1D212B605035004C8ED5 /* RewardsViewController.swift */,
 				8C8D1D3A2B6063AA004C8ED5 /* RewardsViewModel.swift */,
+				8C8D1D742B61C1CD004C8ED5 /* GuestPassHeader.swift */,
+				8C8D1D782B61D5A2004C8ED5 /* TopRewardCell.swift */,
+				8C8D1D802B6215A2004C8ED5 /* MainRewardCell.swift */,
+				8C8D1D7A2B61DDD7004C8ED5 /* GradientProgressView.swift */,
+				8C8D1D822B6219A6004C8ED5 /* GradientLabel.swift */,
+				8C8D1D842B621CC9004C8ED5 /* ClaimButton.swift */,
 			);
 			path = Rewards;
 			sourceTree = "<group>";
@@ -114,9 +163,49 @@
 			isa = PBXGroup;
 			children = (
 				8C8D1D3D2B6063CB004C8ED5 /* RewardsService.swift */,
+				8C8D1D562B618372004C8ED5 /* UserService.swift */,
 				8C8D1D3F2B6063EA004C8ED5 /* ServiceContainer.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		8C8D1D552B6180A4004C8ED5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8C8D1D582B6184AA004C8ED5 /* UserProfile.swift */,
+				8C8D1D5A2B6184E9004C8ED5 /* Reward.swift */,
+				8C8D1D5C2B6188CD004C8ED5 /* GemTheme.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8C8D1D5F2B6190B2004C8ED5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8C8D1D602B6190ED004C8ED5 /* HomeViewController.swift */,
+				8C8D1D6B2B61A47A004C8ED5 /* ReferralEntryView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8C8D1D622B619584004C8ED5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8C8D1D632B619592004C8ED5 /* SF-Pro-Display-Semibold.otf */,
+				8C8D1D642B61959D004C8ED5 /* SF-Pro-Display-Regular.otf */,
+				8C8D1D762B61C7B7004C8ED5 /* SF-Pro-Display-Medium.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		8C8D1D6D2B61B1C0004C8ED5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8C8D1D6E2B61B1CC004C8ED5 /* HapticGenerator.swift */,
+				8C8D1D702B61B54E004C8ED5 /* Fonts.swift */,
+				8C8D1D722B61B574004C8ED5 /* Colors.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,8 +272,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C8D1D772B61C7B7004C8ED5 /* SF-Pro-Display-Medium.otf in Resources */,
 				8C8D1D482B6068E5004C8ED5 /* Main.storyboard in Resources */,
 				8C8D1D2A2B605039004C8ED5 /* LaunchScreen.storyboard in Resources */,
+				8C8D1D662B61960D004C8ED5 /* SF-Pro-Display-Semibold.otf in Resources */,
+				8C8D1D652B6195F9004C8ED5 /* SF-Pro-Display-Regular.otf in Resources */,
 				8C8D1D272B605039004C8ED5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,15 +288,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C8D1D812B6215A2004C8ED5 /* MainRewardCell.swift in Sources */,
+				8C8D1D6F2B61B1CC004C8ED5 /* HapticGenerator.swift in Sources */,
 				8C8D1D222B605035004C8ED5 /* RewardsViewController.swift in Sources */,
-				8C8D1D342B605D53004C8ED5 /* UIFontExtension.swift in Sources */,
+				8C8D1D5D2B6188CD004C8ED5 /* GemTheme.swift in Sources */,
+				8C8D1D832B6219A6004C8ED5 /* GradientLabel.swift in Sources */,
+				8C8D1D7B2B61DDD7004C8ED5 /* GradientProgressView.swift in Sources */,
+				8C8D1D732B61B574004C8ED5 /* Colors.swift in Sources */,
 				8C8D1D3B2B6063AA004C8ED5 /* RewardsViewModel.swift in Sources */,
 				8C8D1D402B6063EA004C8ED5 /* ServiceContainer.swift in Sources */,
+				8C8D1D752B61C1CD004C8ED5 /* GuestPassHeader.swift in Sources */,
+				8C8D1D7D2B61E0D2004C8ED5 /* UIButtonExtension.swift in Sources */,
+				8C8D1D612B6190ED004C8ED5 /* HomeViewController.swift in Sources */,
+				8C8D1D852B621CC9004C8ED5 /* ClaimButton.swift in Sources */,
+				8C8D1D5B2B6184E9004C8ED5 /* Reward.swift in Sources */,
 				8C8D1D1E2B605035004C8ED5 /* AppDelegate.swift in Sources */,
+				8C8D1D6C2B61A47A004C8ED5 /* ReferralEntryView.swift in Sources */,
+				8C8D1D592B6184AA004C8ED5 /* UserProfile.swift in Sources */,
+				8C8D1D792B61D5A2004C8ED5 /* TopRewardCell.swift in Sources */,
 				8C8D1D3E2B6063CB004C8ED5 /* RewardsService.swift in Sources */,
+				8C8D1D712B61B54E004C8ED5 /* Fonts.swift in Sources */,
+				8C8D1D572B618372004C8ED5 /* UserService.swift in Sources */,
 				8C8D1D202B605035004C8ED5 /* SceneDelegate.swift in Sources */,
 				8C8D1D322B605CF3004C8ED5 /* UIColorExtension.swift in Sources */,
 				8C8D1D372B605F42004C8ED5 /* UIImageExtension.swift in Sources */,
+				8C8D1D7F2B61F0C5004C8ED5 /* UITableViewCellExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
