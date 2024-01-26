@@ -20,7 +20,13 @@ extension UIButton {
         ])
         completeText.append(attachmentString)
         completeText.append(NSAttributedString(string: text))
-        completeText.addAttributes([.foregroundColor: color], range: NSRange(location: 0, length: completeText.length))
+        completeText.addAttributes([
+            .foregroundColor: color
+        ], range: NSRange(
+            location: 0,
+            length: completeText.length
+        ))
+        
         setAttributedTitle(completeText, for: .normal)
     }
 }
