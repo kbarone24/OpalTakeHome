@@ -43,14 +43,14 @@ struct GemTheme {
             primaryColor = Color.opalPurple
             secondaryColor = Color.opalBlue
         case .popular:
-            primaryColor = Color.opalGreen
-            secondaryColor = Color.opalPink
-        case .special:
             primaryColor = Color.opalPink
+            secondaryColor = Color.opalGreen
+        case .special:
+            primaryColor = Color.opalOrange
             secondaryColor = Color.opalPurple
         case .mystery:
             primaryColor = Color.opalPurple
-            secondaryColor = Color.opalOrange
+            secondaryColor = Color.opalPink
         }
     }
 }

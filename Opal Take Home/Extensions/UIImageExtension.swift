@@ -55,4 +55,3 @@ extension UIImage {
     }
 }
 // reference: https://medium.com/academy-poa/how-to-create-a-uiprogressview-with-gradient-progress-in-swift-2d1fa7d26f24
-

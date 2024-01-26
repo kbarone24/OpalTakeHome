@@ -80,22 +80,46 @@ class RewardsViewModel {
                     promise(.success((userProfile: UserProfile(referralCount: 0, proUser: false), rewards: [], topReward: Reward())))
                     return
                 }
-                // return cached values after user action
+                
                 if let cachedUserProfile, var cachedRewards, !refresh {
-                    let topReward = self.getTopReward(userProfile: cachedUserProfile, rewards: cachedRewards)
-                    self.setSelectedReward(selectedID: topReward.id, rewards: &cachedRewards)
-                    promise(.success((userProfile: cachedUserProfile, rewards: cachedRewards, topReward: topReward)))
+                    // return cached values after user action
+                    let topReward = self.getTopReward(
+                        userProfile: cachedUserProfile,
+                        rewards: cachedRewards
+                    )
+                    self.setSelectedReward(
+                        selectedID: topReward.id,
+                        rewards: &cachedRewards
+                    )
+                    promise(.success((
+                        userProfile: cachedUserProfile,
+                        rewards: cachedRewards,
+                        topReward: topReward
+                    )))
                     return
                 }
 
                 Task {
                     // run mock database fetch
-                    let userProfile = await self.userService.fetchUserProfile(referralCount: self.referralCount, proUser: self.proUser)
+                    let userProfile = await self.userService.fetchUserProfile(
+                        referralCount: self.referralCount,
+                        proUser: self.proUser
+                    )
                     var rewards = await self.rewardsService.fetchRewards(userProfile: userProfile)
-                    let topReward = self.getTopReward(userProfile: userProfile, rewards: rewards)
-                    self.setSelectedReward(selectedID: topReward.id, rewards: &rewards)
 
-                    promise(.success((userProfile: userProfile, rewards: rewards, topReward: topReward)))
+                    let topReward = self.getTopReward(
+                        userProfile: userProfile,
+                        rewards: rewards
+                    )
+                    self.setSelectedReward(
+                        selectedID: topReward.id,
+                        rewards: &rewards
+                    )
+                    promise(.success((
+                        userProfile: userProfile,
+                        rewards: rewards,
+                        topReward: topReward
+                    )))
 
                     self.cachedRewards = rewards
                     self.cachedUserProfile = userProfile
@@ -127,6 +151,7 @@ class RewardsViewModel {
     }
 
     private func setSelectedReward(selectedID: String, rewards: inout [Reward]) {
+        // selectedReward toggles highlighted background in MainRewardCell
         for i in 0..<rewards.count {
             rewards[i].selectedReward = rewards[i].id == selectedID
         }

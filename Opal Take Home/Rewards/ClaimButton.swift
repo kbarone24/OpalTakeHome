@@ -48,8 +48,9 @@ class ClaimButton: UIButton {
                     symbol: .checkmark,
                     configuration: config
                 )?.withTintColor(UIColor.white.withAlphaComponent(0.4)) ?? UIImage(),
-                text: "Claimed",
-                color: UIColor.white.withAlphaComponent(0.4)
+                text: "  Claimed",
+                color: UIColor.white.withAlphaComponent(0.4),
+                offset: -1
             )
         }
     }

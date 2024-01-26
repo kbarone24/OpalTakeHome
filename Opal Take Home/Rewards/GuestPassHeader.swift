@@ -70,7 +70,7 @@ class GuestPassHeader: UITableViewHeaderFooterView {
 
         contentView.addSubview(passBackground)
         passBackground.snp.makeConstraints {
-            $0.leading.trailing.equalToSuperview().inset(20)
+            $0.leading.trailing.equalToSuperview().inset(20).priority(.high)
             $0.top.equalTo(36)
         }
 
@@ -103,8 +103,8 @@ class GuestPassHeader: UITableViewHeaderFooterView {
 
         contentView.addSubview(detailLabel)
         detailLabel.snp.makeConstraints {
-            $0.top.equalTo(passBackground.snp.bottom).offset(32)
-            $0.leading.trailing.equalToSuperview().inset(16)
+            $0.top.equalTo(passBackground.snp.bottom).offset(32).priority(.high)
+            $0.leading.trailing.equalToSuperview().inset(16).priority(.high)
             $0.bottom.lessThanOrEqualToSuperview().inset(16)
         }
 
