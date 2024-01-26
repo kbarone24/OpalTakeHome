@@ -8,22 +8,20 @@
 
 **Bonus requirements**
 - [ ] Support for live updating of referral status while viewing this screen if a friend installs Opal
-- [ ] Animations + interactions that enhance the overall experience
+- [x] Animations + interactions that enhance the overall experience
 - [ ] New rewards can be added dynamically at any time and should automatically update the UI and any progress as and when they are.
 - [x] Design System setup + convenience for fonts, colours, icons etc
 - [x] Any other ideas you have that would have a positive impact on the success metrics for this screen (see below)
 
 **Modifications / future work**
-- [x] Referred friends consistency for regular / pro users 
-- [ ] Differentiate between completed vs not completed goals with more strategic use of color -> maybe the progress bar on incomplete goals grayscale (except for the most recent goal) 
-- [ ] Celebration animation when user taps "claim." Option to apply the new gem style
+- [x] "Referred friends" consistency in top reward cell for regular / pro users 
+- [x] After user claims Opal Pro reward, show reward as claimed rather than removing it for user confirmation
+- [ ] Differentiate between completed vs not completed goals with more strategic use of color -> next reward waiting to be unlocked shows colorful progress view, all goals beneath it show grayscale progress views
+- [ ] Celebration animation when user taps "claim." Option to apply the new gem style (applied automatically now).
 
 **Concessions**
-Concessions made with consideration of time constraint vs. user need 
 - View with profile pictures next to "Referred friends:" in Top Reward section
 - Radial gradient on top of view 
 - Dotted container border in Top Reward section
-- Unable to fix all constraints warnings -> they occur when the view is reloading and has not yet determined intrinsic content sizes and thus does not have an impact on UX
-- Opal pro reward logo is incomplete
-- Live updates for new rewards + referrals -> Unsure how to implement without a remote data source
-
+- Opal pro reward logo is missing gradient background
+- Live updates for new rewards + referrals
