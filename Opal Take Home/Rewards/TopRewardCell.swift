@@ -110,8 +110,8 @@ class TopRewardCell: UITableViewCell {
             image: UIImage(
                 symbol: .addPerson,
                 configuration: buttonConfig)?.withTintColor(.white) ?? UIImage(),
-            text: " Add Friends",
-            color: .white)
+            text: "  Add Friends",
+            color: .white, offset: -3)
         button.addTarget(self, action: #selector(openShareSheet), for: .touchUpInside)
         return button
     }()
@@ -124,8 +124,8 @@ class TopRewardCell: UITableViewCell {
             image: UIImage(
                 symbol: .sendArrow,
                 configuration: buttonConfig)?.withTintColor(.black) ?? UIImage(),
-            text: " Share Referral Link",
-            color: .black)
+            text: "  Share Referral Link",
+            color: .black, offset: -3)
         button.addTarget(self, action: #selector(openShareSheet), for: .touchUpInside)
         return button
     }()
@@ -134,6 +134,7 @@ class TopRewardCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         backgroundColor = UIColor(color: .mutedBackground)
 
+        //TODO: add radial gradient
         contentView.addSubview(rewardContainer)
         rewardContainer.snp.makeConstraints {
             $0.top.equalTo(16)
@@ -156,13 +157,13 @@ class TopRewardCell: UITableViewCell {
         rewardContainer.addSubview(friendIcon)
         friendIcon.snp.makeConstraints {
             $0.trailing.equalTo(referralCountLabel.snp.leading).offset(-3)
-            $0.bottom.equalTo(referralCountLabel)
+            $0.bottom.equalTo(referralCountLabel).offset(-1)
         }
 
         rewardContainer.addSubview(separatorLine)
         separatorLine.snp.makeConstraints {
             $0.leading.trailing.equalToSuperview().inset(12)
-            $0.top.equalTo(friendIcon.snp.bottom).offset(16)
+            $0.top.equalTo(referredFriendsLabel.snp.bottom).offset(16)
             $0.height.equalTo(1)
         }
 
@@ -205,7 +206,7 @@ class TopRewardCell: UITableViewCell {
         rewardDetailContainer.addSubview(claimButton)
         claimButton.snp.makeConstraints {
             $0.trailing.centerY.equalToSuperview()
-            $0.width.equalTo(64)
+            $0.width.equalTo(72)
             $0.height.equalTo(32)
         }
 
@@ -215,7 +216,7 @@ class TopRewardCell: UITableViewCell {
         contentView.addSubview(addFriendsButton)
         addFriendsButton.snp.makeConstraints {
             $0.leading.trailing.equalToSuperview().inset(16)
-            $0.top.equalTo(rewardContainer.snp.bottom).offset(32)
+            $0.top.equalTo(rewardContainer.snp.bottom).offset(32).priority(.high)
             $0.height.equalTo(36)
         }
 
@@ -224,7 +225,7 @@ class TopRewardCell: UITableViewCell {
             $0.leading.trailing.equalToSuperview().inset(16)
             $0.top.equalTo(addFriendsButton.snp.bottom).offset(8)
             $0.height.equalTo(36)
-            $0.bottom.equalTo(-24)
+            $0.bottom.equalTo(-16)
         }
     }
 
@@ -236,10 +237,11 @@ class TopRewardCell: UITableViewCell {
         self.rewardID = reward.id
 
         let userReferralCount = userProfile.referredFriendIDs.count
+        let rewardIsUnlocked = userReferralCount >= reward.referralCriteria
+
         referralCountLabel.attributedText = NSAttributedString(string: String(userReferralCount), attributes: labelAttributes)
         rewardIcon.image = UIImage(asset: UIImage.Asset(rawValue: reward.name.caseName) ?? .MysteryGift)
 
-        let rewardIsUnlocked = userReferralCount >= reward.referralCriteria
         let unlockString = rewardIsUnlocked ? "New unlock:" : "Next Unlock:"
         unlockLabel.attributedText = NSAttributedString(string: unlockString, attributes: labelAttributes)
 

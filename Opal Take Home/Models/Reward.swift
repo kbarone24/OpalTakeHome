@@ -33,7 +33,7 @@ struct Reward {
     init() {
         self.id = ""
         self.referralCriteria = 0
-        self.name = .LoyalGem
+        self.name = .loyalGem
         self.description = ""
         self.claimed = false
         self.isProUpgrade = false
@@ -58,15 +58,16 @@ extension Reward: Hashable {
 }
 
 enum RewardName: String {
-    case LoyalGem = "Loyal Gem"
-    case SoulfulGem = "Soulful Gem"
-    case ProUpgrade = "1 Year of Opal Pro"
-    case PopularGem = "Popular Gem"
-    case SpecialGift = "Special Gift"
-    case MysteryGift = "Mystery Gift"
+    case loyalGem = "Loyal Gem"
+    case soulfulGem = "Soulful Gem"
+    case proUpgrade = "1 Year of Opal Pro"
+    case popularGem = "Popular Gem"
+    case specialGift = "Special Gift"
+    case mysteryGift = "Mystery Gift"
 
     var caseName: String {
-        return String(describing: self)
+        var name = String(describing: self)
+        return String(name.prefix(1)).capitalized + String(name.dropFirst())
     }
 }
 

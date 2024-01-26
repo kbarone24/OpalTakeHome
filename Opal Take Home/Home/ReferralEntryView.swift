@@ -21,7 +21,7 @@ class ReferralEntryView: UIView {
         return label
     }()
 
-    private lazy var textField: UITextField = {
+    private(set) lazy var textField: UITextField = {
         let textField = UITextField()
         textField.borderStyle = .roundedRect
         textField.keyboardType = .numberPad

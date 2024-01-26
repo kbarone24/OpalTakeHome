@@ -30,6 +30,11 @@ class HomeViewController: UIViewController {
             $0.height.width.equalTo(300)
         }
     }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        rewardsView.textField.becomeFirstResponder()
+    }
 }
 
 extension HomeViewController: RewardsViewDelegate {

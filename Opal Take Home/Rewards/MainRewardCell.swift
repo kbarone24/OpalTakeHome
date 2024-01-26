@@ -41,7 +41,7 @@ class MainRewardCell: UITableViewCell {
         return attributes
     }()
 
-    private lazy var friendLabel = GradientLabel(font: UIFont(name: Font.OpalSemibold.name, size: 11))
+    private lazy var friendLabel = GradientLabel(font: UIFont(name: Font.opalSemibold.name, size: 11))
 
     private lazy var nameLabel: UILabel = {
         let label = UILabel()
@@ -56,6 +56,8 @@ class MainRewardCell: UITableViewCell {
         label.font = TextStyle.mutedParagraph.font
         label.lineBreakMode = .byWordWrapping
         label.numberOfLines = 0
+        label.setContentHuggingPriority(.required, for: .vertical)
+        label.setContentCompressionResistancePriority(.required, for: .vertical)
         return label
     }()
 
@@ -89,16 +91,18 @@ class MainRewardCell: UITableViewCell {
 
         contentView.addSubview(rewardContainer)
         rewardContainer.snp.makeConstraints {
-            $0.top.equalTo(4)
+            $0.top.equalTo(4).priority(.high)
             $0.leading.trailing.equalToSuperview().inset(16)
         }
 
         rewardContainer.addSubview(rewardBackground)
         rewardBackground.snp.makeConstraints {
             $0.leading.equalToSuperview().inset(16)
-            $0.height.width.equalTo(100)
             $0.centerY.equalToSuperview()
-            $0.top.bottom.lessThanOrEqualToSuperview().inset(16)
+            $0.top.greaterThanOrEqualToSuperview().inset(16).priority(.high)
+            $0.bottom.lessThanOrEqualToSuperview().inset(16).priority(.high)
+            $0.height.equalTo(100).priority(.high)
+            $0.width.equalTo(100)
         }
 
         rewardIcon.clipsToBounds = true
@@ -109,10 +113,11 @@ class MainRewardCell: UITableViewCell {
 
         rewardContainer.addSubview(rewardDetailContainer)
         rewardDetailContainer.snp.makeConstraints {
-            $0.top.bottom.lessThanOrEqualToSuperview().inset(16)
             $0.leading.equalTo(rewardBackground.snp.trailing).offset(32)
             $0.trailing.equalTo(-16)
             $0.centerY.equalToSuperview()
+            $0.top.greaterThanOrEqualToSuperview().inset(16).priority(.high)
+            $0.bottom.lessThanOrEqualToSuperview().inset(16).priority(.high)
         }
 
         rewardDetailContainer.addSubview(friendLabel)
@@ -139,7 +144,7 @@ class MainRewardCell: UITableViewCell {
         downArrow.snp.makeConstraints {
             $0.top.equalTo(rewardContainer.snp.bottom).offset(12)
             $0.centerX.equalToSuperview()
-            $0.bottom.equalTo(-8)
+            $0.bottom.equalTo(-8).priority(.high)
         }
     }
 

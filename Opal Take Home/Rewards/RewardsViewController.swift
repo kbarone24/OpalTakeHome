@@ -19,12 +19,12 @@ class RewardsViewController: UIViewController {
         case mainCell(reward: Reward, userProfile: UserProfile)
     }
 
-    private let viewModel: RewardsViewModel
     typealias Input = RewardsViewModel.Input
     typealias Output = RewardsViewModel.Output
     typealias Snapshot = NSDiffableDataSourceSnapshot<Section, Item>
     typealias DataSource = UITableViewDiffableDataSource<Section, Item>
 
+    private let viewModel: RewardsViewModel
     let refresh = PassthroughSubject<Bool, Never>()
     var subscriptions = Set<AnyCancellable>()
 
@@ -36,6 +36,7 @@ class RewardsViewController: UIViewController {
                 cell?.configure(reward: reward, userProfile: userProfile)
                 cell?.delegate = self
                 return cell ?? UITableViewCell()
+                
             case .mainCell(reward: let reward, userProfile: let userProfile):
                 let cell = tableView.dequeueReusableCell(withIdentifier: MainRewardCell.reuseID, for: indexPath) as? MainRewardCell
 
@@ -70,7 +71,6 @@ class RewardsViewController: UIViewController {
         return tableView
     }()
 
-
     private lazy var activityIndicator: UIActivityIndicatorView = {
         let view = UIActivityIndicatorView()
         view.color = .white
@@ -85,14 +85,12 @@ class RewardsViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
 
-
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         view.backgroundColor = .black
 
         view.addSubview(tableView)
@@ -150,6 +148,7 @@ extension RewardsViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         guard !datasource.snapshot().sectionIdentifiers.isEmpty else { return UIView() }
+
         let section = datasource.snapshot().sectionIdentifiers[section]
         switch section {
         case .topReward(gemTheme: let gemTheme):
