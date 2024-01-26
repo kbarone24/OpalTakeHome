@@ -14,14 +14,14 @@
 - [x] Any other ideas you have that would have a positive impact on the success metrics for this screen (see below)
 
 **Modifications / future work**
-- [x] "Referred friends" consistency in top reward cell for regular / pro users 
+- [x] Standardized "Referred friends" view in TopRewardCell for regular and pro users 
 - [x] After user claims Opal Pro reward, show reward as claimed rather than removing it for user confirmation
 - [ ] Differentiate between completed vs not completed goals with more strategic use of color -> next reward waiting to be unlocked shows colorful progress view, all goals beneath it show grayscale progress views
 - [ ] Celebration animation when user taps "claim." Option to apply the new gem style (applied automatically now).
 
 **Concessions**
-- View with profile pictures next to "Referred friends:" in Top Reward section
-- Radial gradient on top of view 
+- View with friends' profile pictures next to "Referred friends:" in Top Reward section
+- Radial gradient behind Guest Pass
 - Dotted container border in Top Reward section
 - Opal pro reward logo is missing gradient background
 - Live updates for new rewards + referrals
